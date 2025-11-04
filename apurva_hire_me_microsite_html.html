@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apurva Ravikar Chavan — Data Scientist / ML & Backend Engineer</title>
+  <meta name="description" content="Portfolio + hiring pitch for Data Science, Machine Learning, and Backend roles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17; --card:#111827; --card2:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa; --accent2:#22d3ee; --ok:#34d399; --warn:#fbbf24;
+      --ring: 0 0 0 3px rgba(96,165,250,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; height:100%; background:radial-gradient(1200px 800px at 85% -10%, rgba(34,211,238,.12), transparent 60%),
+                               radial-gradient(1000px 600px at -10% 0%, rgba(96,165,250,.18), transparent 60%), var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(8px); background:linear-gradient(180deg, rgba(11,15,23,.9), rgba(11,15,23,.65)); border-bottom:1px solid rgba(148,163,184,.12); z-index:50}
+    nav{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 24px}
+    .nav-links{display:flex; gap:14px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; background:linear-gradient(135deg, var(--accent), var(--accent2)); border:0; color:#0b0f17; font-weight:700; border-radius:12px; box-shadow:0 10px 24px rgba(34,211,238,.15), 0 6px 16px rgba(96,165,250,.2); cursor:pointer}
+    .btn:focus{outline:none; box-shadow:var(--ring)}
+    .ghost{background:transparent; color:var(--text); border:1px solid rgba(148,163,184,.25)}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center; padding:36px 24px}
+    .hero h1{font-size:clamp(28px, 3.2vw, 48px); line-height:1.1; margin:.3rem 0}
+    .hero p{color:var(--muted); font-size:clamp(14px, 1.5vw, 17px)}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:rgba(96,165,250,.12); border:1px solid rgba(96,165,250,.3); font-weight:600; color:#cfe7ff}
+    .grid{display:grid; gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}
+    .grid.cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}
+    @media (max-width: 900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg, var(--card), var(--card2)); border:1px solid rgba(148,163,184,.12); border-radius:16px; padding:18px; transition:transform .14s ease, box-shadow .14s ease;}
+    .card:hover{transform:translateY(-2px); box-shadow:0 14px 35px rgba(15,23,42,.35)}
+    .project h3{margin:.25rem 0; font-size:18px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px}
+    .tag{font-size:12px; color:#cbd5e1; border:1px solid rgba(148,163,184,.25); padding:4px 8px; border-radius:999px}
+    section{scroll-margin-top:84px; margin:28px 0}
+    .section-title{font-size:22px; font-weight:800; margin:6px 0 14px}
+    .kpis{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px}
+    .kpi{padding:14px; background:rgba(15,23,42,.5); border:1px solid rgba(148,163,184,.15); border-radius:14px}
+    .kpi .v{font-size:22px; font-weight:800}
+    .muted{color:var(--muted)}
+    .list{display:grid; gap:10px}
+    .list .li{display:flex; gap:10px}
+    .dot{width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg, var(--accent), var(--accent2)); margin-top:.45rem}
+    footer{padding:40px 24px; border-top:1px solid rgba(148,163,184,.12); color:var(--muted)}
+    .inline-links a{margin-right:12px}
+    .chip{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:rgba(52,211,153,.12); color:#c1f3dc; border:1px solid rgba(52,211,153,.35); font-weight:700}
+    .warn{background:rgba(251,191,36,.12); color:#ffe9b2; border-color:rgba(251,191,36,.35)}
+    .repo-link{white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:block}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div style="font-weight:800; letter-spacing:.3px">Apurva<span style="color:var(--accent)">.</span></div>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#pitch">Pitch</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn ghost" href="https://github.com/Apurva1205" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="pill">Data Scientist • ML Engineer • Backend</span>
+        <h1>Hi, I’m <span style="color:var(--accent)">Apurva Ravikar Chavan</span> — I turn messy data into production models & useful products.</h1>
+        <p>End‑to‑end ML & analytics: data ingestion/cleaning, model development (regression/classification, GBM, time‑series), evaluation, and deployment with an MLOps mindset. I love shipping measurable impact.</p>
+        <div class="kpis" style="margin-top:14px">
+          <div class="kpi"><div class="v">3+ yrs</div><div class="muted">Industry exp</div></div>
+          <div class="kpi"><div class="v">E2E</div><div class="muted">Model → Prod</div></div>
+          <div class="kpi"><div class="v">AWS • PyTorch</div><div class="muted">Python • SQL</div></div>
+          <div class="kpi"><div class="v">Open to</div><div class="muted">US roles • Sponsorship</div></div>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="#pitch">Read my hiring pitch →</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/apurvachavan125/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-title" style="margin-top:0">Recent Highlights</div>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Reasoning for multi‑agent dialogue games</strong> at Ideatrix Cogn AI Lab: deception/trust modeling, belief dynamics tools, research‑grade experimentation.</div></div>
+          <div class="li"><div class="dot"></div><div><strong>LLM data ops & fine‑tuning pipelines</strong> as a Research Assistant at UNH: annotation flows, dataset optimization, secure deployment feedback loops.</div></div>
+          <div class="li"><div class="dot"></div><div><strong>Forecasting systems</strong> at TCS R&I with containerized runtimes and CI/CD, reducing compute cost by <span class="chip">-25%</span>.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">Featured Projects</div>
+      <div class="grid cols-3">
+        <article class="card project">
+          <div class="muted">NLP • Hiring</div>
+          <h3>AI Resume Enhancer</h3>
+          <p>Embeddings + retrieval to score resumes vs JDs, surface missing skills, and auto‑tailor bullet points. Real‑time API + dashboard.</p>
+          <a class="repo-link" href="https://github.com/Apurva1205/AI-RESUME-ENHANCER" target="_blank" rel="noopener">github.com/Apurva1205/AI-RESUME-ENHANCER</a>
+          <div class="tags"><span class="tag">Python</span><span class="tag">sentence‑transformers</span><span class="tag">FastAPI</span></div>
+        </article>
+        <article class="card project">
+          <div class="muted">Time‑Series • Ops</div>
+          <h3>Energy Load Forecasting</h3>
+          <p>ARIMA + LSTM forecasting with anomaly alerts for planning resilience and cost management.</p>
+          <a class="repo-link" href="https://github.com/Apurva1205/Time-Series-Forecasting-For-Energy-Consumption" target="_blank" rel="noopener">github.com/Apurva1205/Time-Series-Forecasting-For-Energy-Consumption</a>
+          <div class="tags"><span class="tag">Pandas</span><span class="tag">PyTorch</span><span class="tag">mLOps</span></div>
+        </article>
+        <article class="card project">
+          <div class="muted">NLP • Low‑Resource</div>
+          <h3>English↔Belarusian NMT</h3>
+          <p>Compact BERT→GPT‑2 pipeline with bilingual preprocessing; focuses on low‑resource translation quality.</p>
+          <a class="repo-link" href="https://github.com/Apurva1205" target="_blank" rel="noopener">Repos & notes on GitHub</a>
+          <div class="tags"><span class="tag">BERT</span><span class="tag">GPT‑2</span><span class="tag">BLEU</span></div>
+        </article>
+        <article class="card project">
+          <div class="muted">Finance • Agents</div>
+          <h3>LLM‑Powered Financial Agent</h3>
+          <p>LLM‑assisted product features, troubleshooting, and perf monitoring across networked environments.</p>
+          <a class="repo-link" href="https://github.com/Apurva1205/LLMs-in-Finance" target="_blank" rel="noopener">github.com/Apurva1205/LLMs-in-Finance</a>
+          <div class="tags"><span class="tag">LLM eval</span><span class="tag">Pipelines</span><span class="tag">Dashboards</span></div>
+        </article>
+        <article class="card project">
+          <div class="muted">Core • NLP</div>
+          <h3>Custom Tokenizers + DS Playbooks</h3>
+          <p>From‑scratch tokenization experiments and reproducible DS notebooks for EDA → model → report.</p>
+          <a class="repo-link" href="https://github.com/Apurva1205/Tokenizers" target="_blank" rel="noopener">github.com/Apurva1205/Tokenizers</a>
+          <a class="repo-link" href="https://github.com/Apurva1205/Data-Science" target="_blank" rel="noopener">github.com/Apurva1205/Data-Science</a>
+          <div class="tags"><span class="tag">BPE</span><span class="tag">NLP</span><span class="tag">Reproducibility</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pitch">
+      <div class="section-title">Hiring Pitch: Ship <em>Faster</em>, <em>Cheaper</em>, <em>Smarter</em></div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3 style="margin-top:0">What I’ll deliver in my first 60 days</h3>
+          <div class="list">
+            <div class="li"><div class="dot"></div><div><strong>LLM Eval Harness + Observability</strong>: golden tasks, regression tests, and a latency/quality/cost dashboard. Target <span class="chip">-30% inference cost</span> and <span class="chip">+10–15% win‑rate</span> on key tasks.</div></div>
+            <div class="li"><div class="dot"></div><div><strong>Data Contracts & Drift Alarms</strong>: schema + stat checks with alerts to stop silent regressions before they hit customers.</div></div>
+            <div class="li"><div class="dot"></div><div><strong>Retrieval & Prompt Optimization</strong>: benchmark chunking, rerankers, and prompt strategies; document wins with A/Bs.</div></div>
+            <div class="li"><div class="dot"></div><div><strong>Reusable MLOps Template</strong>: containerized training + serving, CI for notebooks, experiment tracking, one‑click deploys.</div></div>
+            <div class="li"><div class="dot"></div><div><strong>Agentic Workflows (where it pays)</strong>: scoped, reversible actions with guardrails to automate repetitive ops safely.</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Why me</h3>
+          <ul class="list" style="margin:0; padding:0; list-style:none">
+            <li class="li"><div class="dot"></div><div>End‑to‑end builder: notebooks → APIs → dashboards → docs.</div></li>
+            <li class="li"><div class="dot"></div><div>Shipped cost‑savers (e.g., container/runtime changes yielding <span class="chip">-25%</span> compute).</div></li>
+            <li class="li"><div class="dot"></div><div>Comfortable with big messy data and production constraints.</div></li>
+            <li class="li"><div class="dot"></div><div>Clear communicator who can align with PM/Eng/Design quickly.</div></li>
+          </ul>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+            <span class="chip warn">Open to onsite / hybrid / remote</span>
+            <span class="chip">US‑based (ET)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title">Experience</div>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3 style="margin-top:0">Data Scientist Intern — Ideatrix Cogn AI Lab</h3>
+          <p class="muted">Jul 2025 – Present • Remote</p>
+          <p>Reasoning algorithms for social‑deduction multi‑agent games (deception, trust, inference); tools for belief dynamics; research‑ready experiments.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Research Assistant — University of New Haven</h3>
+          <p class="muted">Jan 2024 – May 2025 • CT</p>
+          <p>LLM data ops and fine‑tuning pipelines, annotation projects, dataset optimization, secure deployment feedback loops.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">ML Engineer — TCS Research & Innovation</h3>
+          <p class="muted">Jun 2021 – Aug 2023 • Mumbai</p>
+          <p>Forecasting models in production, model tracking + serving, containerized runtimes, enterprise docs; <strong>reduced compute cost by 25%</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">Let’s talk</div>
+      <div class="grid cols-2">
+        <div class="card">
+          <p>Email: <a href="mailto:apurvachavan125@gmail.com">apurvachavan125@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/apurvachavan125/" target="_blank" rel="noopener">linkedin.com/in/apurvachavan125</a></p>
+          <p>GitHub: <a href="https://github.com/Apurva1205" target="_blank" rel="noopener">github.com/Apurva1205</a></p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="inline-links">
+      <span>© <script>document.write(new Date().getFullYear())</script> Apurva Ravikar Chavan</span>
+      • <a href="https://github.com/Apurva1205" target="_blank" rel="noopener">GitHub</a>
+      • <a href="https://www.linkedin.com/in/apurvachavan125/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
